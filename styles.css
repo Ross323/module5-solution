@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #61122f;
+    --secondary-color: #f6b319;
+    --accent-color: #557c3e;
+    --background-color: #222;
+    --text-color: #fff;
+}
+
+body {
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+    background-color: var(--secondary-color);
+}
+
+#logo-img {
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: var(--accent-color);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin: 0;
+    line-height: .75;
+}
+
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #951C49;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    background: #E7E7E7;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--background-color);
+}
+
+.footer h5 {
+    color: var(--text-color);
+}
+
+.footer p {
+    color: var(--accent-color);
+}
+
+.mosaic {
+    background-color: #000;
+    color: var(--text-color);
+    opacity: .8;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 767px) {
+    .navbar-brand h1 {
+        font-size: 5vw;
+    }
+
+    .footer p {
+        font-size: .8em;
+        line-height: 1.8;
+    }
+}
